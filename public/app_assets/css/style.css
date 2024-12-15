@@ -1,0 +1,442 @@
+html , body {
+    font-family:sans-serif;
+    background-color: #fff;
+}
+ul li {
+    list-style: none;
+    display: inline;
+}
+ul li a {
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.7);
+}
+
+p {
+    font-size: 15px;
+    line-height: 25px;
+    color: #383838;
+}
+
+/*--Wrraper CSS Start--*/
+
+
+.wrraper {
+    width:100%;
+}
+.wrraper .inner_wrraper {
+    width:100%;
+    max-width: 850px;
+    margin: 20px auto;
+    border: 1px solid #808080;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+.wrraper_header {
+    padding: 0 15px;
+    border: 1px solid #8080803b;
+}
+.tabs {
+    display: flex;
+    align-items: center;
+}
+.tabs .inner_tabs li {
+    padding: 15px 20px;
+
+}
+/*.active {
+    border-bottom: 3px solid #33028e;
+    
+}*/
+.active a{
+    color: #000 !important;
+}
+.wrraper_search {
+    padding:15px;
+    position: relative;
+}
+.wrraper_search .search_icon {
+    position: absolute;
+    font-size: 22px;
+    color:#8a8a8a;
+    padding:10px;
+}
+.wrraper_search input[type=search] {
+    width:100%;
+    height: 40px;
+    font-size: 14px;
+    color:#8a8a8a;
+    padding-left: 35px;
+    border:1px solid #8080803b;
+    border-radius: 4px;
+    outline: 0;
+}
+.fees_table {
+    padding:0 15px 15px 15px;
+    box-sizing: border-box;
+}
+.fees_table .fees_tabel_heading p {
+    margin-top:0;
+    color:#808080;
+    font-weight: 500;
+}
+
+.table_main {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+    padding:10px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.table_main tr {
+    height:50px;
+}
+.table_main tr:nth-child(even) {
+    background-color: #f8f8f8b7;
+    border-top: 1px solid #8080803b;
+    border-bottom: 1px solid #8080803b;
+}
+
+.custom_checkbox{
+    position: relative;
+}
+.custom_checkbox input[type=checkbox] {
+    position: absolute;
+    width: 100%;
+    cursor: pointer;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    opacity: 0;
+}
+.custom_checkbox input + span::before {
+    content: "";
+    border: 1px solid #808080;
+    width: 16px;
+    height: 16px;
+    z-index: 1;
+    opacity: 1;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #fff;
+}
+.custom_checkbox input:checked + span::before{
+    background-image: url(../images/icon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.table_main td {
+    color:#808080;
+}
+.table_main td:nth-child(2) {
+    color:rgb(43, 142, 255);
+}
+.table_main .badge{
+    border: 1px solid #3f6d3f;
+    border-radius: 32px;
+    background-color: #d3ffd3;
+    text-align: center;
+    color: #406e40;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 2px 6px;
+}
+.badge_inactive {
+    border: 1px solid #c6c7c6;
+    border-radius: 32px;
+    background-color: #ececec;
+    text-align: center;
+    color: #777777;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 2px 6px;
+}
+.table_main td i {
+    border: 1px solid #808080;
+    border-radius: 4px;
+    padding: 6px 12px;
+}
+.table_main td i:nth-child(2) {
+    background-color: red;
+    color: #ffffff;
+}
+.table_main td i:nth-child(1) {
+    margin-right: -7px;
+    border-right: 0;
+}
+.select_btn {
+    padding:8px;
+    outline: 0;
+    border-radius: 4px;
+}
+
+/*--Wrraper CSS End//////////////////////////////--*/
+
+
+/*--Fee Information CSS Start--*/
+
+.wrraper .inner_wrraper_two {
+    display: flex;
+    justify-content: space-between;
+    border:0;
+}
+/*.wrraper_left, .wrraper_right {
+    width:100%;
+    max-width: 45%;
+    border:1px solid #8080803b;
+    border-radius: 4px;
+    padding:20px 15px;
+    font-size: 14px;
+    background-color: #ffffff;
+}*/
+.wrraper_left h4,
+.wrraper_right h4 {
+    margin: 0;
+    font-size: 17px;
+}
+.wrraper_left div {
+    margin-bottom: 15px;
+}
+.wrraper_left p, input[type=radio]{
+    margin:0 10px 10px 0;
+    font-weight: 600;
+}
+
+.wrraper_left input[type=text] {
+    width:100%;
+    height: 40px;
+    font-size: 14px;
+    color:#8a8a8a;
+    border:1px solid #8080803b;
+    border-radius: 4px;
+    padding: 8px;
+    outline: 0;
+    box-shadow: 0px 0px 2px rgb(0 0 0 / 15%);
+    box-sizing: border-box;
+}
+.checkbox_icon,
+.radio_icon {
+    position: relative;
+    padding-left:25px;
+}
+.checkbox_icon input[type=checkbox],
+.radio_icon input[type=radio] {
+    position: absolute;
+    width: 100%;
+    cursor: pointer;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    opacity: 0;
+}
+.checkbox_icon input + span::before {
+    content: "";
+    border: 1px solid #808080;
+    width: 14px;
+    height: 14px;
+    z-index: 1;
+    opacity: 1;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #fff;
+    position: absolute;
+    left:0;
+}
+.radio_icon input + span::before {
+    content: "";
+    border: 1px solid #808080;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    z-index: 1;
+    opacity: 1;
+    display: inline-block;
+    background-color: #fff;
+    position: absolute;
+    left:0;
+ 
+}
+.checkbox_icon input:checked + span::before{
+    background-image: url(../images/icon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.radio_icon input:checked + span::before {
+    box-shadow: inset 0 0 0px 2px rgb(255, 255, 255);
+    background-color: #3200a7;
+}
+.item_headphone {
+    margin-bottom: 10px;
+}
+.wrraper_left .input_radio p,
+.wrraper_left .radio_one {
+    margin-bottom: 8px;
+}
+
+.wrraper_right .item_specification,
+.wrraper_right .item_detailes {
+    margin:15px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 1px solid #8080803b;
+}
+.wrraper_right .item_specification p{
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+.item_detailes .item_img {
+    width:100%;
+    max-width: 80px;
+}
+.item_detailes .item_img img {
+    max-width: 100%;
+}
+.item_Inner_detailes {
+    width: calc(100% - 80px - 20%);
+}
+.item_Inner_detailes .item_name p,
+.item_Inner_detailes .remove_btn a {
+    color:red;
+    text-decoration: none;
+}
+.item_extra {
+    margin-bottom: 20px;
+}
+
+.wrraper_right_body_bottom {
+    width:100%;
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.item_detailes p {
+    margin: 0 0 8px 0;
+}
+.wrraper_right_body_bottom input[type=text] {
+    width:100%;
+    max-width: 100px;
+    padding:8px;
+}
+.item_quantity_bottom {
+    text-align: center;
+}
+
+.wrraper_right_footer {
+    text-align: end;
+}
+.fotter_btn .btn {
+    padding: 8px 25px;
+    color:#ffffff;
+    border:0;
+}
+.fotter_btn .update_btn {
+    background-color: #808080;
+}
+.fotter_btn .check_out_btn {
+    background-color: #fa3714;
+}
+/*--Fee Information CSS End//////////////////////--*/
+/**********Form-css-24-5-2022***********/
+.wrraper_left, .wrraper_right {
+  width: 100%;
+  max-width: 85%;
+  border: 1px solid #8080803b;
+  border-radius: 4px;
+  padding: 40px 30px 30px;
+  font-size: 14px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  box-shadow: 0px 0px 11px #00000024;
+  margin-bottom: 40px;
+}
+.wrraper_left h4, .wrraper_right h4 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.wrraper_left p, input[type="radio"] {
+  font-size: 14px;
+}
+.wrraper_left p, input[type="radio"] {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.input_name input, .wrraper_left input[type="text"] {
+border: 1px solid #737373 !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border-radius: 0px !important;
+}
+.err_msg, #fees_name-error, #price-error {
+  color: red;
+  font-size: 13px;
+  position: absolute;
+  /*right: 23px;*/
+}
+.input_name {
+  margin-bottom: 5px !important;
+}
+.Type_fees .form-select {
+  width: 100%;
+  height: 40px;
+  background: white;
+  outline: none;
+  border: 1px solid #737373 !important;
+    color: #6c757d; 
+    font-size: 14px;
+    padding: 8px;
+}
+.submit_button input {
+  background: #008260;
+  border: 2px solid #008260 !important;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 6px 30px;
+}
+.submit_button input:hover {
+  background: transparent !important;
+  color: #008260 !important;
+  border-color: #008260 !important;
+}
+.page-item.active .page-link {
+  background: #008260 !important;
+  color: white !important;
+  border-color: #008260 !important;
+}
+.table-bordered {
+  border: none !important;
+}
+table.table-bordered.dataTable th:last-child, table.table-bordered.dataTable th:last-child, table.table-bordered.dataTable td:last-child, table.table-bordered.dataTable td:last-child {
+  border-right: none !important;
+}
+.table-bordered thead td, .table-bordered thead th {
+  border-bottom-width: 0px !important;
+}
+.swal2-styled.swal2-confirm {
+    background-color: #008260 !important;
+}
+.swal2-styled.swal2-confirm:focus {
+    box-shadow: 0 0 0 3px rgb(0, 130, 96);
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #008260;
+    border-color: #005cbf;
+}
+
+@media only screen and (max-width:767px){
+    .wrraper_left, .wrraper_right {
+  max-width: 100%;
+  padding: 30px 30px 4px;
+  margin-bottom: 0px !important;
+}
+}
